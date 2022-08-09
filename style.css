@@ -1,0 +1,121 @@
+*{
+box-sizing: border-box;
+
+}
+
+html{
+    font-family: sans-serif;
+}
+body{
+    width: 91vw;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.enlace_cero{
+    color: initial;
+    text-decoration: none;
+}
+
+
+
+/* RESULTADO */
+#cuadro_resultado{
+    width: 100px;
+    border: 1px solid black;
+}
+
+#cuadro_resultado > p {
+    margin: 5px 14px;
+}
+#s_rec{
+    margin: 30px;
+}
+
+
+
+
+h1{
+    text-align: center;
+}
+
+#s1{
+    width: 85vw;
+    max-width: 800px;
+    margin: 0px auto;
+    background-color:rgb(220, 248, 248);
+    padding: 20px;
+}
+h2{
+    margin: 0px;
+    text-align: center;
+}
+
+h2 + p {
+    text-align: center;
+    font-style: italic;
+}
+input{
+    display: inline-block;
+    width: 45px;
+    border-radius: 0;
+    border: 0px;
+    border-bottom: 1px solid grey;
+    height: fit-content;
+}
+
+.flex_row:hover label{
+    text-decoration: underline;
+} 
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+/* .boton_siguiente{
+    background-color: white;
+    border-radius: 0;
+    padding: 5px 10px;
+    border: 2px solid rgb(69, 241, 241);
+    display: block;
+    margin: 20px auto 0px;
+    cursor: pointer;
+} */
+
+.boton_siguiente{
+    background-color: white;
+    border-radius: 0;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    display: block;
+    margin: 20px auto 0px;
+    cursor: pointer;
+}
+
+.boton_siguiente:hover{
+    background-color: grey;
+    color: white;
+}
+
+.boton_siguiente:active{
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.imagen_centrada{
+    display: block;
+    margin: 0px auto;
+    height: 35vh;
+}
+
+
+
+#contenedor_intro{
+    background-color: rgb(220, 248, 248);
+    padding: 10px 20px;
+    margin: 20px;
+}
+

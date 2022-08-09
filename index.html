@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+           <a href="index.html" class="enlace_cero"> Roles de Belbin</a></h1>
+    </header>
+
+    <main>
+        <!-- Introducción -->
+        <section id="intro">
+            <h2>El test</h2>
+            <div id="contenedor_intro">
+            <p>Este cuestionario tiene como fin ayudar a aquellos quien lo completen a comprender su comportamiento a la hora de trabajar en equipo.</p>
+            <p>En cada una de las secciones, reparta un total de diez puntos entre las oraciones que crea que mejor describen su conducta. Estos diez puntos se pueden repartir entre varias oraciones. En los casos extremos, puede que se distribuyan equitativamente entre todas las oraciones, o se puedan otorgar los diez puntos a una única oración.</p>
+            </div>  
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUbMAIFoZXb2Iil211FwqTOp11uc1eZZD5Q&usqp=CAU" alt="" class="imagen_centrada">
+            <button class="boton_siguiente" onclick="empezar()"> Comenzar</button>
+        </section>
+
+        <!-- Comienza formulario -->
+        <section id="s1" style="display: none;">
+            <h2>Sección 1</h2>
+            <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
+            <h3>Cómo creo que puedo contribuir al grupo?</h3>
+            <div class="flex_row">
+                <label for="p10">Creo que identifico rápidamente y aprovecho las oportunidades nuevas</label>
+                <input type="number" placeholder="" name="p10" id="p10" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p11">Trabajo muy bien con una amplia gama de gente distinta</label>
+                <input type="number" placeholder="" name="p11" id="p11" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p12">Tener ideas es una de mis cualidades innatas</label>
+                <input type="number" placeholder="" name="p12" id="p12" value="0" min="0" max="10">
+            </div >
+            <div class="flex_row">
+                <label for="p13">Tener ideas es una de mis cualidades innatas</label>
+                <input type="number" placeholder="" name="p13" id="p13" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p14">Pueden confiar en que acabaré cualquier tarea que esté haciendo. Por lo tanto, mi capacidad de llevara acabo las cosas que tienen mucho que ver con mi efectividad personal.</label>
+                <input type="number" placeholder="" name="p14" id="p14" value="0" min="0" max="10">
+            </div class="flex_row">
+            <div class="flex_row">
+                <label for="p15">Estoy dispuesto a enfrentarme a la impopularidad temporal, especialmente si ello conduce a resultados que al final merecen la pena.</label>
+                <input type="number" placeholder="" name="p15" id="p15" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p16">Me doy cuenta rápidamente de los planes e ideas que pueden funcionar en una situación particular.</label>
+                <input type="number" placeholder="" name="p16" id="p16" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p17">Soy capaz de ofrecer un argumento razonado para una línea de actuación alternativa, sin que dé lugar a interpretaciones sesgadas o prejuicios.</label>
+                <input type="number" placeholder="Respuesta" name="p16" id="p17" value="0" min="0" max="10">
+            </div>
+            <button type="button" onclick="resultado1()" class="boton_siguiente">Siguiente</button>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="s_rec" style="display: none;">
+            <h2>Resultado:</h2>
+            <div id="cuadro_resultado">
+                <p>Tu rol és: </p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
