@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test de Belbin</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 </head>
 <body>
     <header>
         <h1>
-           <a href="index.html" class="enlace_cero"> Roles de Belbin</a></h1>
+        <a href="index.html" class="enlace_cero"> Roles de Belbin</a></h1>
     </header>
 
     <main>
@@ -65,10 +66,6 @@
             </div>
             <button type="button" onclick="resultado1()" class="boton_siguiente">Siguiente</button>
         </section>
-
-
-
-
         <section class="sec_preguntas" id="s2" style="display: none;">
             <h2>Sección 2</h2>
             <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
@@ -107,26 +104,324 @@
             </div>
             <button type="button" onclick="resultado2()" class="boton_siguiente">Siguiente</button>
         </section>
+        <section class="sec_preguntas" id="s3" style="display: none;">
+            <h2>Sección 3</h2>
+            <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
+            <h3>Cuando estoy en un proyecto con otras personas...</h3>
+            <div class="flex_row">
+                <label for="p10">Tengo facilidad para influir en las personas sin impresionarlas ni obligarlas.</label>
+                <input type="number" placeholder="" name="p30" id="p30" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p11">La atención la pongo en los detalles, el seguimiento concienzudo y la vigilancia general evitan que se cometan errores tontos y omisiones que podrían comprometer un buen resultado.</label>
+                <input type="number" placeholder="" name="p31" id="p31" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p12">Muchas veces presiono para que se hagan cosas para asegurarme de que no se pierde el tiempo o se pierden de vista los objetivos principales de las reuniones.</label>
+                <input type="number" placeholder="" name="p32" id="p32" value="0" min="0" max="10">
+            </div >
+            <div class="flex_row">
+                <label for="p13">Se puede contar conmigo para aportar ideas muy originales en actividades de resolución de problemas.</label>
+                <input type="number" placeholder="" name="p33" id="p33" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p14">Siempre estoy dispuesto a apoyar una buena sugerencia en pro del interés común.</label>
+                <input type="number" placeholder="" name="p34" id="p34" value="0" min="0" max="10">
+            </div class="flex_row">
+            <div class="flex_row">
+                <label for="p15">Soy capaz de ver rápidamente las posibilidades de nuevas ideas y desarrollos.</label>
+                <input type="number" placeholder="" name="p35" id="p35" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p16">Creo que mi capacidad de dar juicios razonados y serenos es valorada por los demás ya que ayuda a tomar decisiones equilibradas.</label>
+                <input type="number" placeholder="" name="p36" id="p36" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p17">Se puede contar conmigo para asegurar que todas las tareas fundamentales están organizadas y repartidas entre los miembros del grupo.</label>
+                <input type="number" placeholder="Respuesta" name="p37" id="p37" value="0" min="0" max="10">
+            </div>
+            <button type="button" onclick="resultado3()" class="boton_siguiente">Siguiente</button>
+        </section>
+        <section class="sec_preguntas" id="s4" style="display: none;">
+            <h2>Sección 4</h2>
+            <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
+
+            <h3>Mi enfoque habitual al trabajar en equipo es...</h3>
+            <div class="flex_row">
+                <label for="p10">Tengo un callado interés en conocer mejor a mis compañeros.</label>
+                <input type="number" placeholder="" name="p40" id="p40" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p11">No soy reacio a desafiar los puntos de vista de los demás o a mantener un punto de vista minoritario.</label>
+                <input type="number" placeholder="" name="p41" id="p41" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p12">Tengo habilidad para plantear argumentos razonados y una línea de pensamiento rigurosa para poner a prueba las propuestas nuevas y detectar sus posibles debilidades.</label>
+                <input type="number" placeholder="" name="p42" id="p42" value="0" min="0" max="10">
+            </div >
+            <div class="flex_row">
+                <label for="p13">Tengo talento para hacer que las cosas funcionen cuando hay que poner en práctica un plan.</label>
+                <input type="number" placeholder="" name="p43" id="p43" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p14">Prefiero evitar lo obvio y buscar soluciones innovadoras, creativas e inesperadas.</label>
+                <input type="number" placeholder="" name="p44" id="p44" value="0" min="0" max="10">
+            </div class="flex_row">
+            <div class="flex_row">
+                <label for="p15">Aporto un toque de “perfeccionismo” a cualquier trabajo en equipo en el que tomo parte.</label>
+                <input type="number" placeholder="" name="p45" id="p45" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p16">Me gusta utilizar mis contactos de trabajo y mi red de relaciones fuera del propio grupo.</label>
+                <input type="number" placeholder="" name="p46" id="p46" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p17">Normalmente paso bastante tiempo escuchando las opiniones de todos, pero cuando hay que tomar una decisión, no vacilo.</label>
+                <input type="number" placeholder="Respuesta" name="p47" id="p47" value="0" min="0" max="10">
+            </div>
+            <button type="button" onclick="resultado4()" class="boton_siguiente">Siguiente</button>
+        </section>
+        <section class="sec_preguntas" id="s5" style="display: none;">
+            <h2>Sección 5</h2>
+            <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
+
+            <h3>Obtengo satisfacción de un trabajo porque:</h3>
+            <div class="flex_row">
+                <label for="p10">Disfruto analizando situaciones y evaluando todas las posibilidades y opiniones que hay</label>
+                <input type="number" placeholder="" name="p50" id="p50" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p11">Me interesa conocer las soluciones prácticas y pragmáticas de los problemas</label>
+                <input type="number" placeholder="" name="p51" id="p51" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p12">Me gusta sentir que estoy fomentando y creando unas buenas relaciones laborales</label>
+                <input type="number" placeholder="" name="p52" id="p52" value="0" min="0" max="10">
+            </div >
+            <div class="flex_row">
+                <label for="p13">Puedo influir de una forma fuerte y clara en las decisiones</label>
+                <input type="number" placeholder="" name="p53" id="p53" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p14">Puedo conocer a personas con diferentes ideas que pueden ofrecer puntos de vista nuevos e inusuales.</label>
+                <input type="number" placeholder="" name="p54" id="p54" value="0" min="0" max="10">
+            </div class="flex_row">
+            <div class="flex_row">
+                <label for="p15">Puedo hacer que la gente se ponga de acuerdo sobre cuáles son las prioridades y las líneas de actuación necesarias.</label>
+                <input type="number" placeholder="" name="p55" id="p55" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p16">Me siento en “mi elemento” en las situaciones en las que puedo dedicar toda mi atención a una tarea y conseguir muy buenos resultados.</label>
+                <input type="number" placeholder="" name="p56" id="p56" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p17">Me gusta encontrar un área o un sector de esfuerzo que amplíe mi imaginación.</label>
+                <input type="number" placeholder="Respuesta" name="p57" id="p57" value="0" min="0" max="10">
+            </div>
+            <button type="button" onclick="resultado5()" class="boton_siguiente">Siguiente</button>
+        </section>
+        <section class="sec_preguntas" id="s6" style="display: none;">
+            <h2>Sección 6</h2>
+            <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
+
+            <h3>Si de repente me dan una tarea difícil a realizar en un tiempo límite y con gente que no concozco...</h3>
+            <div class="flex_row">
+                <label for="p10">Prefiero idear una solución por mi cuenta y después intentar “vendérsela” al grupo</label>
+                <input type="number" placeholder="" name="p60" id="p60" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p11">Estoy dispuesta a trabajar con la persona que muestre el enfoque más prometedor de cara al problema, a pesar de lo difícil que resulte trabajar con ella.</label>
+                <input type="number" placeholder="" name="p61" id="p61" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p12">Encontraría la manera de reducir el tamaño de la tarea a uno que fuera más manejable estableciendo cómo y en qué podrían contribuir distintas personas</label>
+                <input type="number" placeholder="" name="p62" id="p62" value="0" min="0" max="10">
+            </div >
+            <div class="flex_row">
+                <label for="p13">Mi sentido natural para fijar prioridades y saber lo que es urgente asegura el que casi nunca nos retrasemos.</label>
+                <input type="number" placeholder="" name="p63" id="p63" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p14">Normalmente mantengo la “serenidad” y la capacidad de pensar objetivamente y con claridad.</label>
+                <input type="number" placeholder="" name="p64" id="p64" value="0" min="0" max="10">
+            </div class="flex_row">
+            <div class="flex_row">
+                <label for="p15">A pesar de las presiones y las dificultades, sigo adelante normalmente con lo que haya que hacer.</label>
+                <input type="number" placeholder="" name="p65" id="p65" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p16">Si creyera que el grupo no está realizando progresos, tomaría algunas iniciativas y lo dirigiría de forma enérgica</label>
+                <input type="number" placeholder="" name="p66" id="p66" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p17">Planteo discusiones con la intención de estimular nuevas ideas, fijar nuevas direcciones y poner al grupo en marcha.</label>
+                <input type="number" placeholder="Respuesta" name="p67" id="p67" value="0" min="0" max="10">
+            </div>
+            <button type="button" onclick="resultado6()" class="boton_siguiente">Siguiente</button>
+        </section>
 
 
+        <section class="sec_preguntas" id="s7" style="display: none;">
+            <h2>Sección 7</h2>
+            <p>Assigna un número del 1 al 10 en cada afirmación según tu identificación con la misma. La suma de todas las puntuaciones debe ser igual a 10</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section id="s_rec" style="display: none;">
+            <h3>Si de repente me dan una tarea difícil a realizar en un tiempo límite y con gente que no concozco...</h3>
+            <div class="flex_row">
+                <label for="p10">Prefiero idear una solución por mi cuenta y después intentar “vendérsela” al grupo</label>
+                <input type="number" placeholder="" name="p70" id="p70" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p11">Estoy dispuesta a trabajar con la persona que muestre el enfoque más prometedor de cara al problema, a pesar de lo difícil que resulte trabajar con ella.</label>
+                <input type="number" placeholder="" name="p71" id="p71" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p12">Encontraría la manera de reducir el tamaño de la tarea a uno que fuera más manejable estableciendo cómo y en qué podrían contribuir distintas personas</label>
+                <input type="number" placeholder="" name="p72" id="p72" value="0" min="0" max="10">
+            </div >
+            <div class="flex_row">
+                <label for="p13">Mi sentido natural para fijar prioridades y saber lo que es urgente asegura el que casi nunca nos retrasemos.</label>
+                <input type="number" placeholder="" name="p73" id="p73" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p14">Normalmente mantengo la “serenidad” y la capacidad de pensar objetivamente y con claridad.</label>
+                <input type="number" placeholder="" name="p74" id="p74" value="0" min="0" max="10">
+            </div class="flex_row">
+            <div class="flex_row">
+                <label for="p15">A pesar de las presiones y las dificultades, sigo adelante normalmente con lo que haya que hacer.</label>
+                <input type="number" placeholder="" name="p75" id="p75" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p16">Si creyera que el grupo no está realizando progresos, tomaría algunas iniciativas y lo dirigiría de forma enérgica</label>
+                <input type="number" placeholder="" name="p76" id="p76" value="0" min="0" max="10">
+            </div>
+            <div class="flex_row">
+                <label for="p17">Planteo discusiones con la intención de estimular nuevas ideas, fijar nuevas direcciones y poner al grupo en marcha.</label>
+                <input type="number" placeholder="Respuesta" name="p77" id="p77" value="0" min="0" max="10">
+            </div>
+            <button type="button" onclick="resultado7()" class="boton_siguiente">Siguiente</button>
+        </section>
+        <!-- Pantalla resultado -->
+        <section id="s_rec" style="display:none;">
             <h2>Resultado:</h2>
             <div id="cuadro_resultado">
-                <p>Tu rol és: </p>
+                <!-- descripciones -->
+                <div id="d_cerebro" style="display:none ;">
+                    <h4>EL CEREBRO</h4>
+                    <h5>Hombre de ideas</h5>
+                        <ul >
+                            <li>Inicia nuevas ideas</li>
+                            <li>Presenta propuestas</li>
+                            <li>Ofrece una profundización de líneas de acción ya acordadas</li>
+                            <li>Facilita nuevas estrategias</li>
+                            <li>Se preocupa de las principales cuestiones</li>
+                            <li>Busca avances (nuevos caminos) en el enfoque</li>
+                        </ul>
+                </div>
+                <div id="d_monitor" style="display: none;">
+                    <h4>EL MONITOR-AVALUADOR</h4>
+                    <h5>Crítico</h5>
+                        <ul >
+                            <li>Analiza y evalúa problemas</li>
+                            <li>Interpreta situaciones y problemas</li>
+                            <li>Evalúa las ideas y sugerencias de los demás</li>
+                            <li>Interpreta un material complejo (escrito u oral)</li>
+                            <li>Aclara los puntos oscuros</li>
+                            <li>Ve las complicaciones e inconvenientes de las distintas propuestas</li>
+                            <li>Juzga de forma desapasionada</li>
+                            <li>Critica a los demás (“Abogado del diablo”)</li>
+                        </ul>
+                </div>
+                <div id="d_coordinador" style="display: none;">
+                    <h4>EL COORDINADOR</h4>
+                    <h5>Nexo</h5>
+                        <ul >
+                            <li>Facilita la toma de decisiones de otros miembros</li>
+                            <li>Asegura esfuerzos centrados y orientados a los objetivos</li>
+                            <li>Reconoce los puntos fuertes y débiles de diferentes miembros (los apoya o les quita importancia)</li>
+                            <li>Determina el tiempo adecuado para las intervenciones (distribución del tiempo)</li>
+                            <li>Mantiene una opinión equilibrada (permanece atrás y objetivo)</li>
+                            <li>Comunica con efectividad</li>
+                            <li>Inspira entusiasmo a los demás</li>
+                            <li>Confía en los demás</li>
+                            <li>Es decisivo</li>
+                            <li>“Lo suficientemente tolerante para escuchar, lo suficientemente firme como para rechazar un consejo”</li>
+                            <li>Funciona como centro neurálgico</li>
+                        </ul>
+                </div>
+                <div id="d_impulsor" style="display: none;">
+                    <h4>EL IMPULSOR</h4>
+                    <h5>Presidente no oficial</h5>
+                        <ul >
+                            <li>Busca y encuentra modelos en las discusiones</li>
+                            <li>Impone pautas en las discusiones</li>
+                            <li>Articula los sentimientos del grupo</li>
+                            <li>Expresa el veredicto del equipo</li>
+                            <li>Establece los papeles, obligaciones y tareas de los otros</li>
+                            <li>Conforma los objetivos y responsabilidades de los otros</li>
+                            <li>Se preocupa de sus propias prioridades</li>
+                            <li>Muestra un sentido de perspectiva</li>
+                            <li>Está ya con entusiasmo y energía</li>
+                            <li>Muestra un buen sentido del tiempo</li>
+                        </ul>
+                </div>
+                <div id="d_implementador" style="display: none;">
+                    <h4>EL IMPLEMENTADOR</h4>
+                    <h5>Hombre de acción</h5>
+                        <ul >
+                            <li>Transforma las ideas y charlas en acciones</li>
+                            <li>Convierte las estrategias en tareas operacionales</li>
+                            <li>Encuentra lo que es factible</li>
+                            <li>Adapta las sugerencias para que entren dentro de los planes acordados y sistemas establecidos</li>
+                            <li>Demuestra realismo, eficiencia y estilo sistemático</li>
+                            <li>Muestra sentido común</li>
+                            <li>Se preocupa de los objetivos del equipo</li>
+                            <li>Muestra una fuerte lealtad al grupo</li>
+                        </ul>
+                </div>
+                <div id="d_cohesionador" style="display: none;">
+                    <h4>EL COHESIONADOR</h4>
+                    <h5>Constructor de equipo</h5>
+                        <ul >
+                            <li>Aprovecha y apoya las ideas de los demás</li>
+                            <li>Presta ayuda y apoyo personales</li>
+                            <li>Comunica claramente</li>
+                            <li>Fomenta el espíritu de equipo</li>
+                            <li>Atrae a la discusión a los miembros reticentes o tímidos</li>
+                            <li>Intenta evitar o superar las alteraciones</li>
+                            <li>Escucha bien</li>
+                        </ul>
+                </div>
+                <div id="d_investigador" style="display: none;">
+                    <h4>EL INVESTIGADOR DE RECURSOS</h4>
+                    <h5>Hombre de contacto</h5>
+                        <ul style="">
+                            <li>Informa y presenta las ideas y desarrollos de equipos exteriores</li>
+                            <li> Se pone en contacto con otras personas y grupos por propia iniciativa</li>
+                            <li>Estudia las oportunidades que se derivan de los grupos externos</li>
+                            <li>Ve las “posibilidades” de las cosas nuevas</li>
+                            <li>Consulta y pregunta a menuda “barrendero”</li>
+                            <li>“Nunca está en su oficina… y en caso contrario está hablando por teléfono”</li>
+                        </ul>
+                </div>
+                <div id="d_finalizador" style="display: none;">
+                    <h4>EL FINALIZADOR</h4>
+                    <h5>Inspector / controlador</h5>
+                        <ul style="">
+                            <li>Subraya la terminación de las áreas</li>
+                            <li>Atiende a todos los aspectos del trabajo</li>
+                            <li>Subraya los programas y objetivos de la reunión</li>
+                            <li>Mantiene un sentido de urgencia</li>
+                            <li>Busca y señala los errores, omisiones y descuidos</li>
+                            <li>Protege al equipo contra los principales errores y meteduras de pata</li>
+                            <li>Galvaniza a los demás en la acción</li>
+                        </ul>
+                </div>
+            </div>
+            <div>
+                <div id="contenedor_grafico">
+                    <canvas id="grafico"></canvas>
+                    <script src="grafico.js"></script>
+                </div>
             </div>
         </section>
     </main>
