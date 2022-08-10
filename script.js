@@ -346,7 +346,7 @@ let resultado7 = () => {
                 mostrar.style.display = "block"; 
                 break;
             case 5:
-                mostrar = document.getElementById("d_inversor");
+                mostrar = document.getElementById("d_investigador");
                 mostrar.style.display = "block"; 
                 break;
             case 6:
