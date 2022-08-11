@@ -87,14 +87,14 @@ let resultado2 = () => {
     suma = p20 + p21 + p22 + p23 + p24 + p25 + p26 + p27;
     
     if (suma == 10) {
-        t1 = t1 + p26;
-        t2 = t2 + p23;
-        t3 = t3 + p25;
-        t4 = t4 + p22;
-        t5 = t5 + p20;
-        t6 = t6 + p27;
-        t7 = t7 + p21;
-        t8 = t8 + p24;
+        t1 = t1 + p20;
+        t2 = t2 + p21;
+        t3 = t3 + p24;
+        t4 = t4 + p26;
+        t5 = t5 + p22;
+        t6 = t6 + p23;
+        t7 = t7 + p25;
+        t8 = t8 + p27;
         console.log(suma);
         //mostrar siguiente sección
         let s2 = document.getElementById("s2");
@@ -130,14 +130,14 @@ let resultado3 = () => {
     suma = p30 + p31 + p32 + p33 + p34 + p35 + p36 + p37;
     
     if (suma == 10) {
-        t1 = t1 + p36;
-        t2 = t2 + p33;
-        t3 = t3 + p35;
-        t4 = t4 + p32;
-        t5 = t5 + p30;
-        t6 = t6 + p37;
-        t7 = t7 + p31;
-        t8 = t8 + p34;
+        t1 = t1 + p37;
+        t2 = t2 + p30;
+        t3 = t3 + p32;
+        t4 = t4 + p33;
+        t5 = t5 + p35;
+        t6 = t6 + p36;
+        t7 = t7 + p34;
+        t8 = t8 + p31;
         console.log(suma);
         //mostrar siguiente sección
         let s3 = document.getElementById("s3");
@@ -172,14 +172,14 @@ let resultado4 = () => {
     suma = p40 + p41 + p42 + p43 + p44 + p45 + p46 + p47;
     
     if (suma == 10) {
-        t1 = t1 + p46;
-        t2 = t2 + p43;
-        t3 = t3 + p45;
-        t4 = t4 + p42;
-        t5 = t5 + p40;
-        t6 = t6 + p47;
-        t7 = t7 + p41;
-        t8 = t8 + p44;
+        t1 = t1 + p43;
+        t2 = t2 + p47;
+        t3 = t3 + p41;
+        t4 = t4 + p44;
+        t5 = t5 + p46;
+        t6 = t6 + p42;
+        t7 = t7 + p40;
+        t8 = t8 + p45;
         console.log(suma);
         //mostrar siguiente sección
         let s4 = document.getElementById("s4");
@@ -216,14 +216,14 @@ let resultado5 = () => {
     suma = p50 + p51 + p52 + p53 + p54 + p55 + p56 + p57;
     
     if (suma == 10) {
-        t1 = t1 + p56;
-        t2 = t2 + p53;
-        t3 = t3 + p55;
-        t4 = t4 + p52;
-        t5 = t5 + p50;
-        t6 = t6 + p57;
-        t7 = t7 + p51;
-        t8 = t8 + p54;
+        t1 = t1 + p51;
+        t2 = t2 + p55;
+        t3 = t3 + p53;
+        t4 = t4 + p57;
+        t5 = t5 + p54;
+        t6 = t6 + p50;
+        t7 = t7 + p52;
+        t8 = t8 + p56;
         console.log(suma);
         //mostrar siguiente sección
         let s5 = document.getElementById("s5");
@@ -258,14 +258,14 @@ let resultado6 = () => {
     suma = p60 + p61 + p62 + p63 + p64 + p65 + p66 + p67;
     
     if (suma == 10) {
-        t1 = t1 + p66;
-        t2 = t2 + p63;
-        t3 = t3 + p65;
-        t4 = t4 + p62;
-        t5 = t5 + p60;
-        t6 = t6 + p67;
+        t1 = t1 + p65;
+        t2 = t2 + p62;
+        t3 = t3 + p66;
+        t4 = t4 + p60;
+        t5 = t5 + p67;
+        t6 = t6 + p64;
         t7 = t7 + p61;
-        t8 = t8 + p64;
+        t8 = t8 + p63;
         console.log(suma);
         //mostrar siguiente sección
         let s6 = document.getElementById("s6");
@@ -300,14 +300,14 @@ let resultado7 = () => {
     suma = p70 + p71 + p72 + p73 + p74 + p75 + p76 + p77;
     
     if (suma == 10) {
-        t1 = t1 + p76;
-        t2 = t2 + p73;
-        t3 = t3 + p75;
-        t4 = t4 + p72;
-        t5 = t5 + p70;
-        t6 = t6 + p77;
-        t7 = t7 + p71;
-        t8 = t8 + p74;
+        t1 = t1 + p74;
+        t2 = t2 + p76;
+        t3 = t3 + p70;
+        t4 = t4 + p75;
+        t5 = t5 + p73;
+        t6 = t6 + p71;
+        t7 = t7 + p77;
+        t8 = t8 + p72;
         console.log(suma);
         //calcular final
         arrayFinal[0] = t1;
@@ -376,70 +376,10 @@ let resultado7 = () => {
     }
 }
 
-
-
-// let final = () =>{
-//     t1 = arrayFinal[0];
-//     t2 = arrayFinal[1];
-//     t3 = arrayFinal[2];
-//     t4 = arrayFinal[3];
-//     t5 = arrayFinal[4];
-//     t6 = arrayFinal[5];
-//     t7 = arrayFinal[6];
-//     t8 = arrayFinal[7];
-//     let mes_gran = 0;
-//     let rol = 1;
-//     for (let i=0; i<9; i++){
-//         if(arrayFinal[i] > mes_gran){
-//             mes_gran = arrayFinal[i];
-//             rol = i + 1;
-//         }
-//     }
-//     switch(rol){
-//         case 1:
-//             let mostrar = document.getElementById("d_impulsor");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 2:
-//             let mostrar = document.getElementById("d_coordinador");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 3:
-//             let mostrar = document.getElementById("d_implementador");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 4:
-//             let mostrar = document.getElementById("d_cerebro");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 5:
-//             let mostrar = document.getElementById("d_inversor");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 6:
-//             let mostrar = document.getElementById("d_monitor");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 7:
-//             let mostrar = document.getElementById("d_cohesionador");
-//             mostrar.style.display = "block"; 
-//             break;
-//         case 8:
-//             let mostrar = document.getElementById("d_finalizador");
-//             mostrar.style.display = "block"; 
-//             break;
-//     }
-// }
-
-
-
-
-//RESULTADO
-
-// function setup() {
-//     createCanvas(400, 400);
-//   }
-  
-//   function draw() {
-//     background(220);
-//   }
+let todos_roles = () =>{
+    let y = document.getElementById("boton_roles").style.display = "none";
+    for(let i=0; i<9; i++){
+        let a = document.getElementsByClassName("rol")[i];
+        a.style.display="block";
+    }
+}

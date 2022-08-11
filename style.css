@@ -54,6 +54,7 @@ input{
     flex-direction: row;
     justify-content: space-between;
     margin: 8px;
+    gap: 15px;
 }
 
 /* .boton_siguiente{
@@ -128,4 +129,15 @@ h5{
     margin: 0px 0px 15px;
     font-style: italic;
     text-align: center;
+}
+
+.flex_botones{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#a_boton{
+    text-decoration: none;
+    color: black;
 }

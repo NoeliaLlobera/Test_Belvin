@@ -305,7 +305,7 @@
             <h2>Resultado:</h2>
             <div id="cuadro_resultado">
                 <!-- descripciones -->
-                <div id="d_cerebro" style="display:none ;">
+                <div id="d_cerebro" class="rol" style="display:none ;">
                     <h4>EL CEREBRO</h4>
                     <h5>Hombre de ideas</h5>
                         <ul >
@@ -317,7 +317,7 @@
                             <li>Busca avances (nuevos caminos) en el enfoque</li>
                         </ul>
                 </div>
-                <div id="d_monitor" style="display: none;">
+                <div id="d_monitor" class="rol" style="display: none;">
                     <h4>EL MONITOR-AVALUADOR</h4>
                     <h5>Crítico</h5>
                         <ul >
@@ -331,7 +331,7 @@
                             <li>Critica a los demás (“Abogado del diablo”)</li>
                         </ul>
                 </div>
-                <div id="d_coordinador" style="display: none;">
+                <div id="d_coordinador" class="rol" style="display: none;">
                     <h4>EL COORDINADOR</h4>
                     <h5>Nexo</h5>
                         <ul >
@@ -348,7 +348,7 @@
                             <li>Funciona como centro neurálgico</li>
                         </ul>
                 </div>
-                <div id="d_impulsor" style="display: none;">
+                <div id="d_impulsor" class="rol" style="display: none;">
                     <h4>EL IMPULSOR</h4>
                     <h5>Presidente no oficial</h5>
                         <ul >
@@ -364,7 +364,7 @@
                             <li>Muestra un buen sentido del tiempo</li>
                         </ul>
                 </div>
-                <div id="d_implementador" style="display: none;">
+                <div id="d_implementador"  class="rol" style="display: none;">
                     <h4>EL IMPLEMENTADOR</h4>
                     <h5>Hombre de acción</h5>
                         <ul >
@@ -378,7 +378,7 @@
                             <li>Muestra una fuerte lealtad al grupo</li>
                         </ul>
                 </div>
-                <div id="d_cohesionador" style="display: none;">
+                <div id="d_cohesionador" class="rol" style="display: none;">
                     <h4>EL COHESIONADOR</h4>
                     <h5>Constructor de equipo</h5>
                         <ul >
@@ -391,7 +391,7 @@
                             <li>Escucha bien</li>
                         </ul>
                 </div>
-                <div id="d_investigador" style="display: none;">
+                <div id="d_investigador" class="rol" style="display: none;">
                     <h4>EL INVESTIGADOR DE RECURSOS</h4>
                     <h5>Hombre de contacto</h5>
                         <ul style="">
@@ -403,7 +403,7 @@
                             <li>“Nunca está en su oficina… y en caso contrario está hablando por teléfono”</li>
                         </ul>
                 </div>
-                <div id="d_finalizador" style="display: none;">
+                <div id="d_finalizador" class="rol" style="display: none;">
                     <h4>EL FINALIZADOR</h4>
                     <h5>Inspector / controlador</h5>
                         <ul style="">
@@ -416,7 +416,10 @@
                             <li>Galvaniza a los demás en la acción</li>
                         </ul>
                 </div>
-                <button>Mostrar todos los roles</button>
+                <div class="flex_botones">
+                    <button class="boton_siguiente" onclick="todos_roles()" id="boton_roles">Mostrar todos los roles</button>
+                    <a href="index.html" id="a_boton"><button class="boton_siguiente" id="boton_roles">Volver a realizar el test</button></a>
+                </div>
             </div>
             <div>
                 <div id="contenedor_grafico">
