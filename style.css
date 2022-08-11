@@ -90,7 +90,8 @@ input{
 .imagen_centrada{
     display: block;
     margin: 0px auto;
-    height: 35vh;
+    width: 50vw;
+    max-width: 300px;
 }
 #contenedor_intro{
     background-color: rgb(220, 248, 248);
