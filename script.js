@@ -383,3 +383,43 @@ let todos_roles = () =>{
         a.style.display="block";
     }
 }
+
+
+const labels = [
+    'Impulsor',
+    'Coordinador',
+    'Implementador',
+    'Cerebro',
+    'Inversor de recursos',
+    'Monitor',
+    'Cohesionador',
+    'Finalizador'
+];
+
+const data = {
+    labels: labels,
+    datasets: [{
+    label: 'Afinidad',
+    backgroundColor: 'rgb(2, 160, 160)',
+    borderColor: 'rgb(2, 160, 160)',
+    data: arrayFinal //ARRAY CON RESULTADOS,
+    }]
+};
+
+const config = {
+    type: 'line',
+    data: data,
+    options: {
+        plugins: {
+            legend: {
+            display: true
+            }
+        },
+        maintainAspectRatio: false,
+    }
+};
+
+const grafico = new Chart(
+document.getElementById('grafico'),
+config
+);
